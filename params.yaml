@@ -1,0 +1,11 @@
+genome_gtf : "/no_backup/rg/ileahy/Tetrahymena_thermophila/Tetrahymena_thermophila_lyric.gff"
+genome_fasta : "/no_backup/rg/ileahy/Tetrahymena_thermophila/Tetrahymena_thermophila.fa"
+
+# Production settings
+debug: true
+max_cpus: 4  # Reduced for dev mode
+max_memory: '8GB'  # Reduced for dev mode
+
+# Optional: Add these if you want to customize the output directory
+output_dir: "/no_backup/rg/ileahy/Tetrahymena_thermophila/secorfsearch_out"  # Local output directory
+geneid_param: "/no_backup/rg/ileahy/geneid/params/Tetrahymena_thermophila/Tetrahymena_thermophila.5911.param"  # Update to your geneid parameter file location
