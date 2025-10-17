@@ -36,7 +36,7 @@ grep -v '^#' "$GFF_FILE" | cut -f1 | sort -u | while read -r tid; do
         for coord in "${coord_list[@]}"; do
             output_file="$OUTPUT_DIR/${tid}_SECIS${coord}.geneid.txt"
             echo "  → Running geneid with SECIS at $coord"
-            $HOME/bin/geneid-stops -P "$PARAM_FILE" -s -W "$tmp_fa" > "$output_file"
+            $HOME/bin/geneid -P "$PARAM_FILE" -s -W "$tmp_fa" > "$output_file"
             echo "    Saved: $output_file"
         done
     else
